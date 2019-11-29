@@ -1,22 +1,6 @@
 .a-input {
     display: block;
-
-    font-family: inherit;
-    font-size: 100%;
-    line-height: 1.15;
-    margin: 0;
-    padding: var(--padding-default);
-    background: var(--color-white);
-
-    border: 1px solid var(--color-gray--dark);
-    border-radius: 4px;
-
     width: 100%;
-}
-
-.a-input:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px var(--color-primary), 0 0 0 1px var(--color-primary--contrast);
 }
 
 .a-input[type="checkbox"] {

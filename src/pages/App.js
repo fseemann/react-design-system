@@ -1,16 +1,10 @@
 import React from 'react'
-import AButton from '../components/atoms/a-button'
 import './App.css'
+import TComponents from '../components/templates/t-components'
 
 function App () {
   return (
-    <div>
-      Running server!
-      <div>
-        <AButton variant={'primary'} />
-        <AButton />
-      </div>
-    </div>
+    <TComponents />
   )
 }
 

@@ -36,8 +36,6 @@ code {
 
   border: 1px solid var(--color-gray--dark);
   border-radius: 4px;
-
-  cursor: pointer;
 }
 
 .a-button:focus,

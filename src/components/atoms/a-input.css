@@ -10,6 +10,7 @@
     height: calc(1.15em + var(--padding-default));
 
     position: relative;
+    cursor: pointer;
 }
 
 .a-input[type="checkbox"]:checked:after {

@@ -21,6 +21,7 @@ export default function MInput (props) {
         name={props.name}
         placeholder={props.placeholder}
         describedBy={hintId}
+        type={props.type}
       />
       <AHint
         id={hintId}

@@ -4,7 +4,7 @@
     line-height: 1.15;
     margin: 0;
     padding: 8px;
-    background: white;
+    background: var(--color-white);
 
     border: 1px solid var(--color-gray--dark);
     border-radius: 4px;
@@ -31,5 +31,5 @@
 
 .a-button:focus {
     outline: none;
-    box-shadow: 0 0 4px blue;
+    box-shadow: 0 0 3px 2px var(--color-primary), 0 0 1px 1px var(--color-primary--contrast);
 }

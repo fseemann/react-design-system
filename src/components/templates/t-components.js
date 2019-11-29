@@ -19,9 +19,10 @@ export default function TComponents () {
         </AStack>
         <AStack spacing={'small'}>
           <AHeading level={3} text={'Inputs'} margin={'small'} />
-          <AInput type={'text'} placeholder={'Text'} name={'username'} />
-          <AInput type={'number'} placeholder={'Number'} name={'username'} />
-          <AInput type={'checkbox'} name={'username'} />
+          <AInput type={'text'} placeholder={'Text'} name={'text'} />
+          <AInput type={'password'} placeholder={'Password'} name={'password'} />
+          <AInput type={'number'} placeholder={'Number'} name={'number'} />
+          <AInput type={'checkbox'} name={'checkbox'} />
         </AStack>
         <AStack spacing={'small'}>
           <AHeading level={3} text={'Labels'} margin={'small'} />

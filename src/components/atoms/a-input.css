@@ -31,7 +31,7 @@
 .a-input[type="checkbox"]:checked:after {
     content: '\2714';
     font-size: 1.35em;
-    right: 15%;
-    bottom: 5%;
+    right: 19%;
+    bottom: 10%;
     position: absolute;
 }

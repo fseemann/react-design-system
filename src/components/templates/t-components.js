@@ -14,8 +14,8 @@ export default function TComponents () {
         <AHeading level={2} text={'Atoms'} margin={'medium'} />
         <AStack spacing={'small'}>
           <AHeading level={3} text={'Buttons'} margin={'small'} />
-          <AButton />
-          <AButton variant={'primary'} />
+          <AButton text={'Default'}/>
+          <AButton text={'Primary'} variant={'primary'} />
         </AStack>
         <AStack spacing={'small'}>
           <AHeading level={3} text={'Inputs'} margin={'small'} />

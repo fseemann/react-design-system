@@ -5,6 +5,7 @@ import './t-components.css'
 import ALabel from '../atoms/a-label'
 import AHeading from '../atoms/a-heading'
 import AStack from '../atoms/a-stack'
+import MInput from '../molecules/m-input'
 
 export default function TComponents () {
   return (
@@ -14,7 +15,7 @@ export default function TComponents () {
         <AHeading level={2} text={'Atoms'} margin={'medium'} />
         <AStack spacing={'small'}>
           <AHeading level={3} text={'Buttons'} margin={'small'} />
-          <AButton text={'Default'}/>
+          <AButton text={'Default'} />
           <AButton text={'Primary'} variant={'primary'} />
         </AStack>
         <AStack spacing={'small'}>
@@ -36,6 +37,14 @@ export default function TComponents () {
           <AHeading level={4} text={'Heading 4'} />
           <AHeading level={5} text={'Heading 5'} />
           <AHeading level={6} text={'Heading 6'} />
+        </AStack>
+        <AHeading level={2} text={'Molecules'} />
+        <AStack spacing={'small'}>
+          <MInput
+            name={'input'}
+            label={'Input'}
+            hint={'This is your helpful hint.'}
+          />
         </AStack>
       </AStack>
     </div>

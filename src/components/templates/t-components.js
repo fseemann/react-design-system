@@ -2,6 +2,7 @@ import AButton from '../atoms/a-button'
 import AInput from '../atoms/a-input'
 import React from 'react'
 import './t-components.css'
+import ALabel from '../atoms/a-label'
 
 export default function TComponents (props) {
   return (
@@ -17,6 +18,10 @@ export default function TComponents (props) {
         <section>
           <h3>Inputs</h3>
           <AInput name={'username'} />
+        </section>
+        <section>
+          <h4>Labels</h4>
+          <ALabel for={'some-input-id'} />
         </section>
       </section>
     </div>

@@ -31,5 +31,5 @@
 
 .a-button:focus {
     outline: none;
-    box-shadow: 0 0 3px 2px var(--color-primary), 0 0 1px 1px var(--color-primary--contrast);
+    box-shadow: 0 0 0 2px var(--color-primary), 0 0 0 1px var(--color-primary--contrast);
 }

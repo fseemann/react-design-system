@@ -1,0 +1,26 @@
+.a-stack {
+    display: flex;
+    flex-direction: column;
+
+    --spacing: 1.5em
+}
+
+.a-stack--is-none {
+    --spacing: 0;
+}
+
+.a-stack--is-small {
+    --spacing: 0.5em;
+}
+
+.a-stack--is-medium {
+    --spacing: 1.0em;
+}
+
+.a-stack--is-large {
+    --spacing: 1.5em;
+}
+
+.a-stack > * + * {
+    margin-top: var(--spacing);
+}

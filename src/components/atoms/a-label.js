@@ -1,9 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import './a-label.css'
 
 export default function ALabel (props) {
   return (
-    <label htmlFor={props.for}>{ props.text }</label>
+    <label
+      className={'a-label'}
+      htmlFor={props.for}
+    >
+      {props.text}
+    </label>
   )
 }
 

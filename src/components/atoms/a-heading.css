@@ -10,7 +10,7 @@
 }
 
 .a-heading--2 {
-    font-size: 1.65em;
+    font-size: 1.90em;
     font-weight: bold;
 }
 
@@ -32,4 +32,16 @@
 .a-heading--6 {
     font-size: 1.05em;
     font-weight: bold;
+}
+
+.a-heading--margin-small {
+    margin: 0.25em 0;
+}
+
+.a-heading--margin-medium {
+    margin: 0.4em 0;
+}
+
+.a-heading--margin-large {
+    margin: 0.6em 0;
 }

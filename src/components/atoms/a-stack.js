@@ -1,4 +1,4 @@
-import React, {useMemo} from 'react'
+import React, { useMemo } from 'react'
 import PropTypes from 'prop-types'
 import './a-stack.css'
 import { className } from '../utilities'
@@ -8,7 +8,7 @@ export default function AStack (props) {
 
   return (
     <div className={className}>
-      { props.children }
+      {props.children}
     </div>
   )
 }

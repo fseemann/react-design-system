@@ -1,7 +1,10 @@
-import React, { useState, useCallback } from 'react'
+import React, { useState, useMemo, useCallback } from 'react'
 import PropTypes from 'prop-types'
+import { className } from '../utilities'
+import './a-input.css'
 
 export default function AInput (props) {
+  const className = useClassName(props)
   const [value, setValue] = useState('')
   const handleValueChange = useCallback(
     (event) => setValue(event.target.value),
@@ -10,6 +13,7 @@ export default function AInput (props) {
 
   return (
     <input
+      className={className}
       name={props.name}
       placeholder={props.placeholder}
       type={props.type}
@@ -27,4 +31,13 @@ AInput.propTypes = {
 
 AInput.defaultProps = {
   placeholder: 'Input'
+}
+
+function useClassName (props) {
+  return useMemo(
+    () => className([
+      'a-input'
+    ]),
+    []
+  )
 }

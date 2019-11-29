@@ -18,7 +18,9 @@ export default function TComponents () {
         </section>
         <section>
           <AHeading level={3} text={'Inputs'} margin={'small'}/>
-          <AInput name={'username'} />
+          <AInput type={'text'} placeholder={'Text'} name={'username'} />
+          <AInput type={'number'} placeholder={'Number'} name={'username'} />
+          <AInput type={'checkbox'} name={'username'} />
         </section>
         <section>
           <AHeading level={3} text={'Labels'} margin={'small'}/>

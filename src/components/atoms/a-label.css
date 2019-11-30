@@ -1,3 +1,7 @@
 .a-label {
     font-weight: bold;
 }
+
+.a-label--is-light {
+    font-weight: normal;
+}

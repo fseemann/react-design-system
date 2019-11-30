@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import PropTypes from 'prop-types'
 import './a-label.css'
+import { className } from '../utilities'
 
 export default function ALabel (props) {
+  const className = useClassName(props)
+
   return (
     <label
-      className={'a-label'}
+      className={className}
       htmlFor={props.for}
     >
       {props.text}
@@ -18,6 +21,16 @@ ALabel.defaultProps = {
 }
 
 ALabel.propTypes = {
+  for: PropTypes.string.isRequired,
   text: PropTypes.string,
-  for: PropTypes.string.isRequired
+  variant: PropTypes.oneOf(['light'])
+}
+
+function useClassName (props) {
+  return useMemo(() => className([
+      'a-label',
+      props.variant && `a-label a-label--is-${props.variant}`
+    ]),
+    [props.variant]
+  )
 }

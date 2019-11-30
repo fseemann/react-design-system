@@ -6,6 +6,7 @@ import ALabel from '../atoms/a-label'
 import AHeading from '../atoms/a-heading'
 import AStack from '../atoms/a-stack'
 import MInput from '../molecules/m-input'
+import MCheckbox from '../molecules/m-checkbox'
 
 export default function TComponents () {
   return (
@@ -107,6 +108,10 @@ export default function TComponents () {
             name={'input'}
             label={'Input'}
             hint={'This is your helpful hint.'}
+          />
+          <MCheckbox
+            name={'checked'}
+            label={'Checked'}
           />
         </AStack>
       </AStack>

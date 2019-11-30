@@ -14,7 +14,8 @@ export default function AColumns (props) {
 }
 
 AColumns.propTypes = {
-  spacing: PropTypes.oneOf(['small', 'medium', 'large', 'none']).isRequired
+  spacing: PropTypes.oneOf(['small', 'medium', 'large', 'none']).isRequired,
+  wrap: PropTypes.oneOf(['none'])
 }
 
 AColumns.defaultProps = {
@@ -25,8 +26,9 @@ function useClassName (props) {
   return useMemo(
     () => className([
       'a-columns',
-      `a-columns--is-${props.spacing}`
+      `a-columns--is-${props.spacing}`,
+      props.wrap && `a-columns--wrap-${props.wrap}`
     ]),
-    [props.spacing]
+    [props.spacing, props.wrap]
   )
 }

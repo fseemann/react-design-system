@@ -26,3 +26,15 @@
 .a-columns > * + * {
     margin-left: var(--spacing);
 }
+
+@media (max-width: 1023px) {
+    .a-columns:not(.a-columns--wrap-none) {
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .a-columns.a-columns:not(.a-columns--wrap-none) > * + * {
+        margin-left: 0;
+        margin-top: var(--spacing);
+    }
+}

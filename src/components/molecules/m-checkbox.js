@@ -11,7 +11,10 @@ export default function MCheckbox (props) {
 
   return (
     <div className={'m-checkbox'}>
-      <AColumns spacing={'small'}>
+      <AColumns
+        spacing={'small'}
+        wrap={'none'}
+      >
         <AInput
           id={inputId}
           name={props.name}

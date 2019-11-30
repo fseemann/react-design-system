@@ -7,6 +7,9 @@ import AHeading from '../atoms/a-heading'
 import AStack from '../atoms/a-stack'
 import MInput from '../molecules/m-input'
 import MCheckbox from '../molecules/m-checkbox'
+import AHint from '../atoms/a-hint'
+import AColumns from '../atoms/a-columns'
+import ACard from '../atoms/a-card'
 
 export default function TComponents () {
   return (
@@ -16,6 +19,30 @@ export default function TComponents () {
         text={'Components'}
         margin={'large'}
       />
+      <AStack>
+        <AHeading
+          level={2}
+          text={'Colors'}
+        />
+        <ACard color={['#9AE79C']}>
+          <AHeading text={'Brand'} level={2} />
+          <AHint text={'#9AE79C'} />
+        </ACard>
+        <AColumns>
+          <ACard color={['#808080', '#fefefe']}>
+            <AHeading text={'Dark grey'} level={2} className="a-hero__title" />
+            <AHint text={'#808080'} className="a-hero__description" />
+          </ACard>
+          <ACard color={['#A9A9A9']}>
+            <AHeading text={'Grey'} level={2} className="a-hero__title" />
+            <AHint text={'#A9A9A9'} className="a-hero__description" />
+          </ACard>
+          <ACard color={['#D3D3D3']}>
+            <AHeading text={'Light grey'} level={2} className="a-hero__title" />
+            <AHint text={'#D3D3D3'} className="a-hero__description" />
+          </ACard>
+        </AColumns>
+      </AStack>
       <AStack>
         <AHeading
           level={2}

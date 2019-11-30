@@ -15,8 +15,14 @@
 
 .a-input[type="checkbox"]:checked:after {
     content: '\2714';
+
+    display: block;
+    width: 100%;
+    text-align: center;
+
     font-size: 1.35em;
-    right: 19%;
-    bottom: 10%;
+    left: 0;
+    top: 5%;
+
     position: absolute;
 }

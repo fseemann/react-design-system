@@ -1,26 +1,26 @@
 .a-stack {
-    --spacing: 1.5em;
+    --stack-spacing: var(--spacing-medium);
 
     display: flex;
     flex-direction: column;
 }
 
 .a-stack--is-none {
-    --spacing: 0;
+    --stack-spacing: 0;
 }
 
 .a-stack--is-small {
-    --spacing: 0.5em;
+    --stack-spacing: var(--spacing-small);
 }
 
 .a-stack--is-medium {
-    --spacing: 1.0em;
+    --stack-spacing: var(--spacing-medium);
 }
 
 .a-stack--is-large {
-    --spacing: 1.5em;
+    --stack-spacing: var(--spacing-large);
 }
 
 .a-stack > * + * {
-    margin-top: var(--spacing);
+    margin-top: var(--stack-spacing);
 }

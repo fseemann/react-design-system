@@ -8,7 +8,7 @@ import AStack from '../atoms/a-stack'
 import MInput from '../molecules/m-input'
 import MCheckbox from '../molecules/m-checkbox'
 import AHint from '../atoms/a-hint'
-import AColumns from '../atoms/a-columns'
+import ARow from '../atoms/a-row'
 import ACard from '../atoms/a-card'
 
 export default function TComponents () {
@@ -28,7 +28,7 @@ export default function TComponents () {
           <AHeading text={'Brand'} level={2} />
           <AHint text={'#9AE79C'} />
         </ACard>
-        <AColumns>
+        <ARow>
           <ACard color={['#808080', '#fefefe']}>
             <AHeading text={'Dark grey'} level={2} className="a-hero__title" />
             <AHint text={'#808080'} className="a-hero__description" />
@@ -41,7 +41,7 @@ export default function TComponents () {
             <AHeading text={'Light grey'} level={2} className="a-hero__title" />
             <AHint text={'#D3D3D3'} className="a-hero__description" />
           </ACard>
-        </AColumns>
+        </ARow>
       </AStack>
       <AStack>
         <AHeading

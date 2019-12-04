@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import AInput from '../atoms/a-input'
 import { useRandomId } from '../utilities'
-import AColumns from '../atoms/a-columns'
+import ARow from '../atoms/a-row'
 import ALabel from '../atoms/a-label'
 import './m-checkbox.css'
 
@@ -11,7 +11,7 @@ export default function MCheckbox (props) {
 
   return (
     <div className={'m-checkbox'}>
-      <AColumns
+      <ARow
         spacing={'small'}
         wrap={'none'}
       >
@@ -25,7 +25,7 @@ export default function MCheckbox (props) {
           variant={'light'}
           for={inputId}
         />
-      </AColumns>
+      </ARow>
     </div>
   )
 }

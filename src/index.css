@@ -23,6 +23,10 @@ code {
   --color-gray--dark: grey;
 
   --padding-default: 12px;
+
+  --spacing-small: 0.5em;
+  --spacing-medium: 1.5em;
+  --spacing-large: 2.25em;
 }
 
 .a-button, .a-input {

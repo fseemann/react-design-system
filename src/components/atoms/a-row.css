@@ -1,5 +1,6 @@
 .a-row {
     --column-spacing: var(--spacing-medium);
+    overflow: hidden;
 }
 
 .a-row__a-columns {

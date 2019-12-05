@@ -22,11 +22,13 @@ code {
   --color-gray: darkgrey;
   --color-gray--dark: grey;
 
-  --padding-default: 12px;
+  --padding-default: 16px;
 
   --spacing-small: 0.5em;
   --spacing-medium: 1.5em;
   --spacing-large: 2.25em;
+
+  --width-max: 1440px;
 }
 
 .a-button, .a-input {

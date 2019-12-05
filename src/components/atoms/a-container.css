@@ -1,0 +1,7 @@
+.a-container {
+    padding: 0 var(--padding-default);
+}
+
+.a-container > * {
+    max-width: var(--width-max);
+}

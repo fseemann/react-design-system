@@ -1,28 +1,19 @@
-import AButton from '../atoms/a-button'
-import AInput from '../atoms/a-input'
 import React from 'react'
 import './t-components.css'
-import ALabel from '../atoms/a-label'
-import AHeading from '../atoms/a-heading'
-import AStack from '../atoms/a-stack'
-import MInput from '../molecules/m-input'
-import MCheckbox from '../molecules/m-checkbox'
-import AHint from '../atoms/a-hint'
-import ARow from '../atoms/a-row'
-import ACard from '../atoms/a-card'
-import ACenter from '../atoms/a-center'
-import AContainer from '../atoms/a-container'
+import { LCenter, LContainer, LRow, LStack } from '../../layouts'
+import { MCheckbox, MInput } from '../molecules'
+import { AButton, ACard, AHeading, AHint, AInput, ALabel } from '../atoms'
 
 export default function TComponents () {
   return (
-    <AContainer>
-      <ACenter>
+    <LContainer>
+      <LCenter>
         <AHeading
           level={1}
           text={'Components'}
           margin={'large'}
         />
-        <AStack>
+        <LStack>
           <AHeading
             level={2}
             text={'Colors'}
@@ -34,7 +25,7 @@ export default function TComponents () {
             />
             <AHint text={'#9AE79C'} />
           </ACard>
-          <ARow>
+          <LRow>
             <ACard color={['#808080', '#fefefe']}>
               <AHeading
                 text={'Dark grey'}
@@ -62,15 +53,15 @@ export default function TComponents () {
                 text={'#D3D3D3'}
               />
             </ACard>
-          </ARow>
-        </AStack>
-        <AStack>
+          </LRow>
+        </LStack>
+        <LStack>
           <AHeading
             level={2}
             text={'Atoms'}
             margin={'medium'}
           />
-          <AStack spacing={'small'}>
+          <LStack spacing={'small'}>
             <AHeading
               level={3}
               text={'Buttons'}
@@ -81,8 +72,8 @@ export default function TComponents () {
               text={'Primary'}
               variant={'primary'}
             />
-          </AStack>
-          <AStack spacing={'small'}>
+          </LStack>
+          <LStack spacing={'small'}>
             <AHeading
               level={3}
               text={'Inputs'}
@@ -107,16 +98,16 @@ export default function TComponents () {
               type={'checkbox'}
               name={'checkbox'}
             />
-          </AStack>
-          <AStack spacing={'small'}>
+          </LStack>
+          <LStack spacing={'small'}>
             <AHeading
               level={3}
               text={'Labels'}
               margin={'small'}
             />
             <ALabel for={'some-input-id'} />
-          </AStack>
-          <AStack spacing={'small'}>
+          </LStack>
+          <LStack spacing={'small'}>
             <AHeading
               level={3}
               text={'Headings'}
@@ -146,12 +137,12 @@ export default function TComponents () {
               level={6}
               text={'Heading 6'}
             />
-          </AStack>
+          </LStack>
           <AHeading
             level={2}
             text={'Molecules'}
           />
-          <AStack spacing={'small'}>
+          <LStack spacing={'small'}>
             <MInput
               name={'input'}
               label={'Input'}
@@ -161,9 +152,9 @@ export default function TComponents () {
               name={'checked'}
               label={'Checked'}
             />
-          </AStack>
-        </AStack>
-      </ACenter>
-    </AContainer>
+          </LStack>
+        </LStack>
+      </LCenter>
+    </LContainer>
   )
 }

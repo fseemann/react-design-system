@@ -1,9 +1,9 @@
-import React, {useMemo} from 'react'
+import React, { useMemo } from 'react'
 import PropTypes from 'prop-types'
 import './a-card.css'
 
 ACard.propTypes = {
-  children: PropTypes.arrayOf([PropTypes.element])
+  children: PropTypes.arrayOf(PropTypes.element)
 }
 
 function ACard (props) {

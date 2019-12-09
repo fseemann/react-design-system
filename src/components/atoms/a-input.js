@@ -1,10 +1,10 @@
-import React, { useState, useMemo, useCallback } from 'react'
+import React, { useCallback, useMemo, useState } from 'react'
 import PropTypes from 'prop-types'
-import { className } from '../utilities'
+import { classNames } from '../../shared'
 import './a-input.css'
 
 export default function AInput (props) {
-  const className = useClassName(props)
+  const className = useMemo(() => classNames(['a-input']), [])
   const inputValue = useInputValue(props)
 
   return (
@@ -53,13 +53,4 @@ function useInputValue (props) {
     [valueProp]: value,
     onChange: handleValueChange
   }
-}
-
-function useClassName (props) {
-  return useMemo(
-    () => className([
-      'a-input'
-    ]),
-    []
-  )
 }

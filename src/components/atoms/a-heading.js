@@ -1,11 +1,17 @@
 import React, { useMemo } from 'react'
 import PropTypes from 'prop-types'
 import './a-heading.css'
-import { className } from '../utilities'
+import { classNames } from '../../shared'
+
+AHeading.propTypes = {
+  level: PropTypes.number.isRequired,
+  text: PropTypes.string.isRequired,
+  margin: PropTypes.oneOf(['small', 'medium', 'large'])
+}
 
 export default function AHeading (props) {
   const HElement = useMemo(() => `h${props.level}`, [props.level])
-  const className = useClassName(props)
+  const className = useHeadingClass(props)
 
   return (
     <HElement
@@ -16,15 +22,9 @@ export default function AHeading (props) {
   )
 }
 
-AHeading.propTypes = {
-  level: PropTypes.number.isRequired,
-  text: PropTypes.string.isRequired,
-  margin: PropTypes.oneOf(['small', 'medium', 'large'])
-}
-
-function useClassName (props) {
+function useHeadingClass (props) {
   return useMemo(
-    () => className([
+    () => classNames([
       'a-heading',
       `a-heading--${props.level}`,
       props.margin && `a-heading--margin-${props.margin}`

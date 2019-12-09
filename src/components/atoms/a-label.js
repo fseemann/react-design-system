@@ -1,10 +1,10 @@
 import React, { useMemo } from 'react'
 import PropTypes from 'prop-types'
 import './a-label.css'
-import { className } from '../utilities'
+import { classNames } from '../../shared'
 
 export default function ALabel (props) {
-  const className = useClassName(props)
+  const className = useLabelClass(props)
 
   return (
     <label
@@ -26,8 +26,8 @@ ALabel.propTypes = {
   variant: PropTypes.oneOf(['light'])
 }
 
-function useClassName (props) {
-  return useMemo(() => className([
+function useLabelClass (props) {
+  return useMemo(() => classNames([
       'a-label',
       props.variant && `a-label a-label--is-${props.variant}`
     ]),

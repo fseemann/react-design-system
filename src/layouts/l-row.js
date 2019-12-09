@@ -1,10 +1,10 @@
 import React, { useMemo } from 'react'
 import PropTypes from 'prop-types'
-import './a-row.css'
-import { className } from '../utilities'
+import './l-row.css'
+import { classNames } from '../shared'
 
-export default function ARow (props) {
-  const className = useClassName(props)
+export default function LRow (props) {
+  const className = useRowClass(props)
 
   return (
     <div className={'a-row'}>
@@ -15,14 +15,13 @@ export default function ARow (props) {
   )
 }
 
-ARow.propTypes = {
+LRow.propTypes = {
   spacing: PropTypes.oneOf(['small', 'medium', 'large', 'none']),
   wrap: PropTypes.oneOf(['none'])
 }
 
-function useClassName (props) {
-  return useMemo(
-    () => className([
+function useRowClass (props) {
+  return useMemo(() => classNames([
       'a-row',
       'a-row__a-columns',
       props.spacing && `a-row__a-columns--is-${props.spacing}`,

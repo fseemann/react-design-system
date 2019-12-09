@@ -1,10 +1,10 @@
 import React, { useMemo } from 'react'
 import PropTypes from 'prop-types'
-import './a-stack.css'
-import { className } from '../utilities'
+import './l-stack.css'
+import { classNames } from '../shared'
 
-export default function AStack (props) {
-  const className = useClassName(props)
+export default function LStack (props) {
+  const className = useStackClass(props)
 
   return (
     <div className={className}>
@@ -13,17 +13,16 @@ export default function AStack (props) {
   )
 }
 
-AStack.propTypes = {
+LStack.propTypes = {
   spacing: PropTypes.oneOf(['small', 'medium', 'large', 'none']).isRequired
 }
 
-AStack.defaultProps = {
+LStack.defaultProps = {
   spacing: 'medium'
 }
 
-function useClassName (props) {
-  return useMemo(
-    () => className([
+function useStackClass (props) {
+  return useMemo(() => classNames([
       'a-stack',
       `a-stack--is-${props.spacing}`
     ]),

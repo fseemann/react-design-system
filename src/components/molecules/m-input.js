@@ -1,17 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import AInput from '../atoms/a-input'
-import ALabel from '../atoms/a-label'
-import AStack from '../atoms/a-stack'
-import AHint from '../atoms/a-hint'
-import { useRandomId } from '../utilities'
+import { AHint, AInput, ALabel } from '../atoms'
+import { useRandomId } from '../../shared'
+import { LStack } from '../../layouts'
 
 export default function MInput (props) {
   const inputId = useRandomId()
   const hintId = useRandomId()
 
   return (
-    <AStack spacing={'small'}>
+    <LStack spacing={'small'}>
       <ALabel
         for={inputId}
         text={props.label}
@@ -27,7 +25,7 @@ export default function MInput (props) {
         id={hintId}
         text={props.hint}
       />
-    </AStack>
+    </LStack>
   )
 }
 

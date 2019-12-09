@@ -1,0 +1,67 @@
+.l-row-column {
+
+}
+
+.l-row-column--is-narrow {
+    flex-grow: 0;
+}
+
+.l-row-column--is-1 {
+    flex: none;
+    width: calc(1/12 * 100%);
+}
+
+.l-row-column--is-2 {
+    flex: none;
+    width: calc(2/12 * 100%);
+}
+
+.l-row-column--is-3 {
+    flex: none;
+    width: calc(3/12 * 100%);
+}
+
+.l-row-column--is-4 {
+    flex: none;
+    width: calc(4/12 * 100%);
+}
+
+.l-row-column--is-5 {
+    flex: none;
+    width: calc(5/12 * 100%);
+}
+
+.l-row-column--is-6 {
+    flex: none;
+    width: calc(6/12 * 100%);
+}
+
+.l-row-column--is-7 {
+    flex: none;
+    width: calc(7/12 * 100%);
+}
+
+.l-row-column--is-8 {
+    flex: none;
+    width: calc(8/12 * 100%);
+}
+
+.l-row-column--is-9 {
+    flex: none;
+    width: calc(9/12 * 100%);
+}
+
+.l-row-column--is-10 {
+    flex: none;
+    width: calc(10/12 * 100%);
+}
+
+.l-row-column--is-11 {
+    flex: none;
+    width: calc(11/12 * 100%);
+}
+
+.l-row-column--is-12 {
+    flex: none;
+    width: 100%;
+}

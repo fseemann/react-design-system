@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { AInput, ALabel } from '../atoms'
 import { useRandomId } from '../../shared'
-import { LRow } from '../../layouts'
+import { LRow, LRowColumn } from '../../layouts'
 import './m-checkbox.css'
 
 export default function MCheckbox (props) {
@@ -14,12 +14,14 @@ export default function MCheckbox (props) {
         spacing={'small'}
         wrap={'none'}
       >
-        <AInput
-          id={inputId}
-          name={props.name}
-          placeholder={props.placeholder}
-          type={'checkbox'}
-        />
+        <LRowColumn size={'narrow'}>
+          <AInput
+            id={inputId}
+            name={props.name}
+            placeholder={props.placeholder}
+            type={'checkbox'}
+          />
+        </LRowColumn>
         <ALabel
           variant={'light'}
           for={inputId}

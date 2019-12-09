@@ -2,14 +2,16 @@ import React, { useMemo } from 'react'
 import PropTypes from 'prop-types'
 import './l-row.css'
 import { classNames } from '../shared'
+import LRowColumn from './l-row-column'
 
 export default function LRow (props) {
   const className = useRowClass(props)
+  const columns = useColumnElements(props)
 
   return (
     <div className={'a-row'}>
       <div className={className}>
-        {props.children}
+        {columns}
       </div>
     </div>
   )
@@ -28,5 +30,15 @@ function useRowClass (props) {
       props.wrap && `a-row__a-columns--wrap-${props.wrap}`
     ]),
     [props.spacing, props.wrap]
+  )
+}
+
+function useColumnElements (props) {
+  return useMemo(
+    () => props.children.map((it, index) =>
+      it.type === LRowColumn
+        ? it
+        : (<LRowColumn key={index}>{it}</LRowColumn>)
+    ), [props.children]
   )
 }
